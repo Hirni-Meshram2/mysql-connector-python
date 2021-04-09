@@ -10,6 +10,7 @@ services:
   - mysql
 before_script:
   - sudo service mysql start
+  - pip install django google protobuf
   - python setup.py install
   
 script:
