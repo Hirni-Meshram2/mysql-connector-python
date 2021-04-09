@@ -11,7 +11,7 @@ services:
 before_script:
   - sudo service mysql start
   #- groupadd mysql
-  - useradd -r -g mysql -s /bin/false mysql
+  #- useradd -r -g mysql -s /bin/false mysql
   - cd /usr/local
   - tar zxvf /path/to/mysql-VERSION-OS.tar.gz
   - ln -s full-path-to-mysql-VERSION-OS mysql
