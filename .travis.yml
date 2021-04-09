@@ -1,16 +1,15 @@
 language: python
 dist: xenial
-services:
-  - mysql
 arch:
   - amd64
   - arm64
 python: 
   - 3.6
   - 3.8
-
+services:
+  - mysql
 before_script:
-  - service mysql start
+  - sudo service mysql start
   - python setup.py install
   
 script:
